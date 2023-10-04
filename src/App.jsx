@@ -8,7 +8,7 @@ import {
   Subscribe,
   Footer,
 } from "./sections";
-import Nav from "./components/Nav";
+import { Nav } from "./components";
 
 const App = () => (
   <main className="relative">
