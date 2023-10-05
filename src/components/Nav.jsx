@@ -5,7 +5,6 @@ const Nav = () => {
   return (
     <header className="padding-x absolute z-10 w-full py-5">
       <nav className="max-container flex items-center justify-between">
-        {/* <img src={headerLogo} alt="Logo" width={130} /> */}
         <a href="#home" className="text-3xl font-bold text-coral-red">
           Nisique
         </a>
