@@ -1,18 +1,20 @@
-import { headerLogo } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 
 const Nav = () => {
   return (
-    <header className="padding-x absolute z-10 w-full py-8">
+    <header className="padding-x absolute z-10 w-full py-5">
       <nav className="max-container flex items-center justify-between">
-        <img src={headerLogo} alt="Logo" width={130} />
+        {/* <img src={headerLogo} alt="Logo" width={130} /> */}
+        <a href="#home" className="text-3xl font-bold text-coral-red">
+          Nisique
+        </a>
         <ul className="flex flex-1 items-center justify-center gap-16 max-lg:hidden">
           {navLinks.map((link) => (
             <li key={link.label}>
               <a
                 href={link.href}
-                className="text-montserrat text-slate-gray text-lg leading-normal"
+                className="text-montserrat text-lg leading-normal text-slate-gray"
               >
                 {link.label}
               </a>
