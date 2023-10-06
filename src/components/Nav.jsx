@@ -3,7 +3,7 @@ import { navLinks } from "../constants";
 
 const Nav = () => {
   return (
-    <header className="padding-x absolute z-10 w-full py-5">
+    <header className="padding-x absolute z-10 w-full py-5 font-montserrat">
       <nav className="max-container flex items-center justify-between">
         <a href="#home" className="text-3xl font-bold text-coral-red">
           Nisique
