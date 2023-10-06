@@ -1,7 +1,7 @@
 const Button = ({ label, iconURL, bgColor, borderColor, textColor }) => {
   return (
     <button
-      className={`flex items-center justify-center gap-2 rounded-full border font-montserrat ${
+      className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-full border font-montserrat sm:text-lg ${
         borderColor || "border-coral-red"
       } ${bgColor || "bg-coral-red"} px-7 py-4 leading-none ${
         textColor || "text-white"

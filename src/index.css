@@ -16,10 +16,6 @@
   .max-container {
     @apply m-auto max-w-[1440px];
   }
-
-  .input {
-    @apply border pl-5 text-base leading-normal text-slate-gray outline-none max-sm:w-full max-sm:rounded-full max-sm:border-slate-gray max-sm:p-5 sm:flex-1 sm:border-none;
-  }
 }
 
 @layer utilities {
