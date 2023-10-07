@@ -8,6 +8,12 @@ const Nav = () => {
   const handleClick = () => setIsActive(!isActive);
 
   useEffect(() => {
+    const navigationHeight = headerRef.current.offsetHeight;
+    document.documentElement.style.setProperty(
+      "scroll-padding",
+      `${navigationHeight}px`,
+    );
+
     const handleScroll = () => {
       if (document.documentElement.scrollTop > 10) {
         headerRef.current.classList.add("bg-white");
