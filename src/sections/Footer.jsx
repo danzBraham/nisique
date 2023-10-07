@@ -20,7 +20,10 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-1 flex-wrap justify-between gap-10">
+        <div
+          id="contact-us"
+          className="flex flex-1 flex-wrap justify-between gap-10"
+        >
           {footerLinks.map((link) => (
             <FooterLink key={link.title} {...link} />
           ))}

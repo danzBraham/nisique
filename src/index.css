@@ -50,4 +50,29 @@
   .info-text {
     @apply font-montserrat text-lg leading-7 text-slate-gray;
   }
+
+  .slide {
+    @apply visible opacity-100;
+  }
+
+  .links {
+    @apply relative font-semibold duration-100;
+  }
+
+  .links::after {
+    content: "";
+    @apply absolute -bottom-0.5 left-0 h-[2px] w-0 bg-coral-red duration-300 hover:w-full;
+  }
+
+  .hamburger > span:first-child {
+    @apply -rotate-[40deg];
+  }
+
+  .hamburger > span:nth-child(2) {
+    @apply scale-0;
+  }
+
+  .hamburger > span:last-child {
+    @apply rotate-[40deg];
+  }
 }
