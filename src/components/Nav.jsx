@@ -31,7 +31,7 @@ const Nav = () => {
 
   return (
     <header
-      className="padding-x fixed z-20 w-full py-4 font-montserrat duration-300"
+      className="padding-x fixed z-20 w-full rounded-b-2xl py-4 font-montserrat duration-300"
       ref={headerRef}
     >
       <nav className="max-container flex items-center justify-between">
