@@ -15,7 +15,10 @@ const Nav = () => {
     );
 
     const handleScroll = () => {
-      if (document.documentElement.scrollTop > 10) {
+      if (
+        document.documentElement.scrollTop > 10 &&
+        window.innerWidth >= 1024
+      ) {
         headerRef.current.classList.add("bg-white");
       } else {
         headerRef.current.classList.remove("bg-white");
@@ -31,7 +34,9 @@ const Nav = () => {
 
   return (
     <header
-      className="padding-x fixed z-20 w-full rounded-b-2xl py-4 font-montserrat duration-300"
+      className={`padding-x fixed z-20 w-full max-lg:bg-white ${
+        isActive ? "rounded-b-none" : "rounded-b-3xl"
+      }  py-4 font-montserrat duration-300`}
       ref={headerRef}
     >
       <nav className="max-container flex items-center justify-between">
